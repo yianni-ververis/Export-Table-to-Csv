@@ -1,0 +1,60 @@
+
+html,
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    overflow-y: auto;
+}
+h1 {
+    font-size: 28px;
+}
+h1, h3 {
+    font-weight: bold;
+}
+a {
+    color: black;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+.container {
+    padding-right: 30px;
+}
+.row {
+    padding-bottom: 20px;
+}
+.noMarginPadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.noMarginPaddingLeftRight {
+    margin: 25px 0;
+    padding: 0;
+}
+.qlik,
+.qlik a,
+.qlik a:hover {
+    color: #65a604 !important;
+}
+/* Fix for the icons in the toolbar*/
+.sel-toolbar-span-icon {
+    top: -10px;
+}
+.header .row .col-md-2 {
+    font-weight: bold;
+    text-align: center;
+}
+.content {
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#csvbtn {
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance:button;
+    padding:4px;
+    text-decoration:none;
+    color:#000;
+}
