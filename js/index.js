@@ -38,6 +38,7 @@
                 alert( error.message );
             } );
 
+            // Get the Qlik Sense Object Table
             me.obj.app = qlik.openApp(me.vars.id, me.config);
 
             me.events();
