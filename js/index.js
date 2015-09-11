@@ -52,13 +52,14 @@
 
     events: function () {
         $( document ).ready(function() {
+
             $(".container").height($("body").height() - 50);
 
-            $(".export").on('click', function (event) {
+            $("#export").on('click', function (event) {
                 me.exportTableToCSV.apply(this, [$('#tableData'), 'QlikSenseExport.csv']);
             });
 
-            $(".exportSense").on('click', function (event) {
+            $("#exportSense").on('click', function (event) {
                 // CSV
                 me.exportTableToCSV.apply(this, [$('.qv-object-table'), 'QlikSenseExport.csv']);
             });
@@ -168,6 +169,10 @@
 
             $('#tableData').append(html);
         });
+
+        // After everything is rendered, enable the buttons for export
+        $('#export').removeClass('disabled');
+        $('#exportSense').removeClass('disabled');
     },
 
     exportTableToCSV: function ($table, filename) {
